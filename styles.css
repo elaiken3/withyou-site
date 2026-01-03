@@ -201,10 +201,21 @@ h1 {
 }
 
 .button.primary {
-  box-shadow: 0 2px 0 rgba(185, 147, 31, 0.15);
+  border-color: rgba(185, 147, 31, 0.45);
+  background: linear-gradient(
+    180deg,
+    rgba(185, 147, 31, 0.22),
+    rgba(185, 147, 31, 0.12)
+  );
+  color: var(--text);
 }
 
 .button.primary:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(185, 147, 31, 0.28),
+    rgba(185, 147, 31, 0.16)
+  );
   box-shadow: 0 8px 20px rgba(185, 147, 31, 0.18);
 }
 
