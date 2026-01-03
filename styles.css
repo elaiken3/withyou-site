@@ -183,17 +183,29 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   box-shadow: 0 1px 0 rgba(17, 24, 39, 0.04);
+
+  min-width: 220px; /* 👈 new */
+}
+
+.button {
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background-color 120ms ease;
 }
 
 .button:hover {
   text-decoration: none;
   transform: translateY(-1px);
-  transition: transform 120ms ease;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.08);
 }
 
 .button.primary {
-  border-color: rgba(185, 147, 31, 0.35);
-  background: linear-gradient(180deg, rgba(185, 147, 31, 0.16), rgba(185, 147, 31, 0.08));
+  box-shadow: 0 2px 0 rgba(185, 147, 31, 0.15);
+}
+
+.button.primary:hover {
+  box-shadow: 0 8px 20px rgba(185, 147, 31, 0.18);
 }
 
 .button.secondary {
@@ -396,6 +408,12 @@ code {
 @media (max-width: 920px) {
   .beta-box {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    min-width: 100%;
   }
 }
 
