@@ -315,6 +315,8 @@ h2 {
   border-radius: var(--radius);
   padding: 18px;
   box-shadow: var(--shadow);
+
+  align-items: center;
 }
 
 .beta-box p {
