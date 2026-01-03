@@ -184,14 +184,9 @@ h1 {
   font-size: 14px;
   box-shadow: 0 1px 0 rgba(17, 24, 39, 0.04);
 
-  min-width: 220px; /* 👈 new */
-}
+  min-width: 220px;
 
-.button {
-  transition:
-    transform 120ms ease,
-    box-shadow 120ms ease,
-    background-color 120ms ease;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
 }
 
 .button:hover {
