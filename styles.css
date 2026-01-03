@@ -92,10 +92,12 @@ a:hover {
 }
 
 .brand-logo {
-  height: 30px;
+  height: 28px;
   width: auto;
+  max-width: 140px;
   display: block;
 }
+
 .brand-mark {
   width: 30px;
   height: 30px;
@@ -384,7 +386,8 @@ code {
 
 @media (max-width: 480px) {
   .brand-logo {
-    height: 26px;
+    height: 24px;
+    max-width: 110px;
   }
 }
 
