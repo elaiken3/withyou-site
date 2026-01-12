@@ -84,11 +84,17 @@ a:hover {
   padding: 10px 0;
 }
 
-.brand {
+.brand{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.brand-home{
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
+  width: fit-content;
 }
 
 .brand-logo {
@@ -107,6 +113,22 @@ a:hover {
   background: var(--accent-wash);
   border: 1px solid rgba(185, 147, 31, 0.25);
   color: var(--accent-2);
+}
+
+.brand-sub {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.brand-sub a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer .subtle {
+  opacity: 0.85;
+  font-size: 13px;
 }
 
 .nav {
