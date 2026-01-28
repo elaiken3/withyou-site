@@ -15,7 +15,7 @@ You can use one feature or all of them. There is no wrong way.
 
 ---
 
-<div class="toc">
+<div class="toc" markdown="1">
   
 ## Table of Contents
 
