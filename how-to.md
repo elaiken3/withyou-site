@@ -1,11 +1,9 @@
-<a id="top"></a>
-
 ---
 layout: default
 title: How to Use WithYou
 permalink: /how-to/
 ---
-
+<a id="top"></a>
 # How to Use WithYou  
 *A complete guide to how the app works — and how the pieces fit together*
 
