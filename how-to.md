@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 ---
 layout: default
 title: How to Use WithYou
@@ -99,6 +101,10 @@ This is deliberate reinforcement:
 
 Today is as much about *acknowledgment* as it is about action.
 
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
+
 ---
 
 ## Focus Sessions (Protecting your attention)
@@ -189,6 +195,10 @@ If you choose to end, the app asks:
 
 This protects you from “I didn’t finish so it doesn’t count.”
 
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
+
 ---
 
 ## Brain Dump / Capture (Getting thoughts out of your head)
@@ -213,6 +223,10 @@ It’s mental offloading.
 - You’re done
 
 You don’t need to organize it yet.
+
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
 
 ---
 
@@ -246,6 +260,10 @@ When you open an Inbox item, you can:
 
 Inbox gives you control without forcing decisions upfront.
 
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
+
 ---
 
 ## Schedule (Time-based commitments)
@@ -266,6 +284,10 @@ Schedule feeds **Today**, so:
 - Upcoming items surface automatically
 - Missed items can be gently checked in on later
 
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
+
 ---
 
 ## Refocus (Outside Focus Sessions too)
@@ -279,6 +301,10 @@ Refocus is for moments like:
 - You’re looping mentally
 
 It’s a 30-second reset — not a lecture.
+
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
 
 ---
 
@@ -325,6 +351,10 @@ It’s a 30-second reset — not a lecture.
 4. If clarity comes, proceed
 5. If not, stop — the app still did its job
 
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
+
 ---
 
 ## The core idea
@@ -340,3 +370,7 @@ It’s a 30-second reset — not a lecture.
 With You isn’t about doing more.
 
 It’s about making *starting, continuing, and stopping* gentler.
+
+<p class="back-to-top">
+  <a href="#top">↑ Back to top</a>
+</p>
