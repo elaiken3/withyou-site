@@ -13,7 +13,6 @@ It is **not** a task manager you need to keep perfectly organized.
 
 You can use one feature or all of them. There is no wrong way.
 
----
 
 <div class="toc" markdown="1">
   
@@ -42,7 +41,6 @@ You can use one feature or all of them. There is no wrong way.
  
 </div>   
 
----
 
 ## Today View (Your home base)
 
