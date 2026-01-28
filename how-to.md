@@ -13,7 +13,7 @@ It is **not** a task manager you need to keep perfectly organized.
 You can use one feature or all of them. There is no wrong way.
 
 ---
-
+<div class="toc">
 ## Table of Contents
 
 - [Today View](#today-view-your-home-base)
@@ -36,7 +36,8 @@ You can use one feature or all of them. There is no wrong way.
   - [Scenario 3: Distracted](#scenario-3-i-keep-getting-distracted-while-working)
   - [Scenario 4: Missed something](#scenario-4-i-missed-something-and-feel-bad-about-it)
   - [Scenario 5: Brain is loud](#scenario-5-my-brain-is-loud-but-i-dont-want-to-work-yet)
-    
+ 
+</div>   
 ---
 
 ## Today View (Your home base)
