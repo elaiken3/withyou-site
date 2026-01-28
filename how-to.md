@@ -41,6 +41,7 @@ You can use one feature or all of them. There is no wrong way.
   - [Scenario 5: Brain is loud](#scenario-5-my-brain-is-loud-but-i-dont-want-to-work-yet)
  
 </div>   
+
 ---
 
 ## Today View (Your home base)
