@@ -11,7 +11,31 @@ WithYou is designed for moments when starting, staying focused, or getting back 
 It is **not** a task manager you need to keep perfectly organized.
 
 You can use one feature or all of them. There is no wrong way.
+---
 
+## Table of Contents
+
+- [Today View](#today-view-your-home-base)
+  - [Right now](#right-now)
+  - [If you have energy](#if-you-have-energy)
+  - [Reset](#reset)
+  - [Completed today](#completed-today)
+- [Focus Sessions](#focus-sessions-protecting-your-attention)
+  - [Creating a Focus Session](#creating-a-focus-session)
+  - [During a Focus Session](#during-a-focus-session)
+  - [When time ends](#when-time-ends-or-you-stop)
+- [Brain Dump / Capture](#brain-dump--capture-getting-thoughts-out-of-your-head)
+- [Inbox](#inbox-your-holding-area)
+  - [Inbox Item actions](#inbox-item-actions)
+- [Schedule](#schedule-time-based-commitments)
+- [Refocus](#refocus-outside-focus-sessions-too)
+- [Putting it all together](#putting-it-all-together-real-scenarios)
+  - [Scenario 1: Overwhelmed](#scenario-1-i-feel-overwhelmed-and-dont-know-where-to-start)
+  - [Scenario 2: I have energy](#scenario-2-i-have-time-and-energy-right-now)
+  - [Scenario 3: Distracted](#scenario-3-i-keep-getting-distracted-while-working)
+  - [Scenario 4: Missed something](#scenario-4-i-missed-something-and-feel-bad-about-it)
+  - [Scenario 5: Brain is loud](#scenario-5-my-brain-is-loud-but-i-dont-want-to-work-yet)
+    
 ---
 
 ## Today View (Your home base)
