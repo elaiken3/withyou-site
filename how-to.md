@@ -14,7 +14,9 @@ It is **not** a task manager you need to keep perfectly organized.
 You can use one feature or all of them. There is no wrong way.
 
 ---
+
 <div class="toc">
+  
 ## Table of Contents
 
 - [Today View](#today-view-your-home-base)
