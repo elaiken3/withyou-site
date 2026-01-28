@@ -42,6 +42,7 @@ You can use one feature or all of them. There is no wrong way.
 </div>   
 
 
+
 ## Today View (Your home base)
 
 **Today** is the main screen of the app.  
