@@ -11,6 +11,7 @@ WithYou is designed for moments when starting, staying focused, or getting back 
 It is **not** a task manager you need to keep perfectly organized.
 
 You can use one feature or all of them. There is no wrong way.
+
 ---
 
 ## Table of Contents
