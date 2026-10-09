@@ -1,6 +1,7 @@
 ---
 layout: default
 title: How to Use WithYou
+description: A complete guide to WithYou — Today, Focus sessions, Capture, Inbox, Schedule, Refocus and I’m stuck.
 permalink: /how-to/
 ---
 <a id="top"></a>
@@ -65,8 +66,14 @@ This is intentional.
 Being “clear” is information — it tells you you’re not behind.
 
 **What to do here**
-- If something appears: you can act on it or jump straight into a Focus Session.
+- If something appears: tap **Start focusing** to begin a Focus Session, or **Not now** to let it wait. It steps aside for a while, no questions asked.
 - If nothing appears: you don’t need to invent work.
+
+**Energy today (optional)**
+At the top of Today you can tap **Low**, **Okay** or **Good**. On a low-energy day, Today suggests the smallest thing and replaces “If you have energy” with *“Rest counts too.”* It resets each day, and you never have to set it.
+
+**Still relevant?**
+If a reminder’s time passed, Today asks about it once, kindly: **Later today**, **Ask later**, or **Let it go**. Then it lets go.
 
 ### If you have energy
 This section is optional by design.
@@ -85,7 +92,8 @@ This section is for moments when your nervous system needs help — not more tas
 
 You’ll see:
 - **Refocus (30 seconds)** – a short reset to pause and re-center
-- **I’m stuck** – a signal that you’re blocked and need gentler guidance
+- **I’m stuck** – a signal that you’re blocked and need gentler guidance. It offers one tiny step, and **Make it smaller** shrinks it further. On iPhones with Apple Intelligence, the smaller step is suggested on your device.
+- **Let today rest** – in the evening, if anything is left for today, one tap moves it to tomorrow morning.
 
 These are not failures.  
 They’re tools for moments when pushing won’t work.
@@ -190,10 +198,11 @@ When the timer ends, you’ll see options:
 
 Nothing auto-forces you.
 
-If you choose to end, the app asks:
-- Did you complete it?
-  - **Yes, completed** → moves to *Completed Today* and clears it from Inbox/Schedule
-  - **No, just stopping** → no penalty, no shame
+If you choose to end, the app asks *“How did it go?”*
+  - **I finished it** → moves to *Completed Today* and clears it from Inbox/Schedule
+  - **Stopping for now** → the task stays where it was. Stopping still counts.
+
+Any thoughts you parked during the session are waiting for you at the end. Schedule them, send them to the Inbox, or let them go. Anything you leave moves to your Inbox, so nothing gets lost.
 
 This protects you from “I didn’t finish so it doesn’t count.”
 
@@ -220,8 +229,9 @@ It’s mental offloading.
 - You’re anxious about forgetting
 
 ### How it works
-- Type or dictate a thought
-- Save it
+- Type or dictate a thought (or tell Siri: “Capture in WithYou”)
+- As you type, a small preview shows where it will go: your Inbox, or a time if you mentioned one (“email landlord tomorrow morning”)
+- Save it. You can undo right away if you change your mind.
 - You’re done
 
 You don’t need to organize it yet.
@@ -257,7 +267,7 @@ When you open an Inbox item, you can:
 - **Mark completed**  
   If it’s already done.
 
-- **Not needed**  
+- **Let it go**  
   Explicitly let it go. This is a feature, not a failure.
 
 Inbox gives you control without forcing decisions upfront.
@@ -310,9 +320,9 @@ It’s a 30-second reset — not a lecture.
 
 ---
 
-# Putting it all together: Real scenarios
+## Putting it all together: Real scenarios
 
-## Scenario 1: “I feel overwhelmed and don’t know where to start”
+### Scenario 1: “I feel overwhelmed and don’t know where to start”
 1. Open **Today**
 2. See *“You’re clear for now”* — okay, no urgency
 3. Tap **Capture**
@@ -322,7 +332,7 @@ It’s a 30-second reset — not a lecture.
 7. Start a **Focus Session** with a short duration
 8. Use **Add thought** or **Refocus** if needed
 
-## Scenario 2: “I have time and energy right now”
+### Scenario 2: “I have time and energy right now”
 1. Open **Today**
 2. Look at **If you have energy**
 3. Choose the suggested next thing
@@ -330,7 +340,7 @@ It’s a 30-second reset — not a lecture.
 5. Work until time ends
 6. Mark completed or stop — either counts
 
-## Scenario 3: “I keep getting distracted while working”
+### Scenario 3: “I keep getting distracted while working”
 1. Start a **Focus Session**
 2. When distracted:
    - Tap **Add thought** to park it
@@ -338,7 +348,7 @@ It’s a 30-second reset — not a lecture.
 3. Return gently
 4. If you stop early, that’s okay — end the session cleanly
 
-## Scenario 4: “I missed something and feel bad about it”
+### Scenario 4: “I missed something and feel bad about it”
 1. Open **Today**
 2. Notice anything surfaced as missed
 3. Decide:
@@ -346,7 +356,7 @@ It’s a 30-second reset — not a lecture.
    - Not important → Let it go
 4. No backlog guilt required
 
-## Scenario 5: “My brain is loud but I don’t want to work yet”
+### Scenario 5: “My brain is loud but I don’t want to work yet”
 1. Open **Today**
 2. Tap **Refocus (30 seconds)** or **I’m stuck**
 3. Breathe
@@ -369,7 +379,7 @@ It’s a 30-second reset — not a lecture.
 - **Refocus** helps you return  
 - **Completed Today** reminds you that it counted  
 
-With You isn’t about doing more.
+WithYou isn’t about doing more.
 
 It’s about making *starting, continuing, and stopping* gentler.
 
