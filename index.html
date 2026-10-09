@@ -1,216 +1,527 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="WithYou is a gentle, shame-free app designed for ADHD brains to help you get started without pressure or guilt. A Common Gene Labs project." />
-    <title>WithYou — A gentle way to start (by Common Gene Labs)</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-
-    <link rel="canonical" href="https://elaiken3.github.io/withyou-site/" />
+    <title>WithYou — A gentle way to start when your brain won’t</title>
+    <meta name="description" content="WithYou is a calm iPhone app for ADHD brains. Get thoughts out of your head, see the one thing that matters right now, and protect a little focus. No streaks, no guilt, nothing overdue." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F2" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1A1B19" />
+    <link rel="canonical" href="https://wearewithyou.app/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="WithYou — A gentle way to start (by Common Gene Labs)" />
-    <meta property="og:description" content="A gentle, shame-free app designed for ADHD brains to help you get started without pressure or guilt. A Common Gene Labs project." />
-    <meta property="og:url" content="https://elaiken3.github.io/withyou-site/" />
-    <meta property="og:image" content="https://elaiken3.github.io/withyou-site/assets/images/og-withyou.png" />
+    <meta property="og:site_name" content="WithYou" />
+    <meta property="og:title" content="WithYou — A gentle way to start when your brain won’t" />
+    <meta property="og:description" content="A calm, shame-free iPhone app for ADHD brains. No streaks, no guilt, nothing overdue." />
+    <meta property="og:url" content="https://wearewithyou.app/" />
+    <meta property="og:image" content="https://wearewithyou.app/assets/images/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    
+    <meta property="og:image:alt" content="WithYou: A gentle way to start when your brain won’t." />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="WithYou — A gentle way to start (by Common Gene Labs)" />
-    <meta name="twitter:description" content="A gentle, shame-free app designed for ADHD brains to help you get started without pressure or guilt. A Common Gene Labs project." />
-    <meta name="twitter:image" content="https://elaiken3.github.io/withyou-site/assets/images/og-withyou.png" />
+    <meta name="twitter:title" content="WithYou — A gentle way to start when your brain won’t" />
+    <meta name="twitter:description" content="A calm, shame-free iPhone app for ADHD brains. No streaks, no guilt, nothing overdue." />
+    <meta name="twitter:image" content="https://wearewithyou.app/assets/images/og-image.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Optional: clean, readable font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/images/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="./assets/images/favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png" sizes="180x180" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "WithYou",
+        "description": "A calm, shame-free iPhone app for ADHD brains: capture thoughts, see the one thing that matters right now, and protect a little focus.",
+        "operatingSystem": "iOS 17.6 or later",
+        "applicationCategory": "HealthApplication",
+        "url": "https://wearewithyou.app/",
+        "image": "https://wearewithyou.app/assets/images/icon-512.png",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "Common Gene Labs", "url": "https://elaiken3.github.io/common-gene-labs" }
+      }
+    </script>
+    <link rel="preload" href="./assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./assets/js/main.js" defer></script>
   </head>
 
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Icon sprite (inline, no requests) -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" /></symbol>
+      <symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2.5h4M12 14l3-3" /><circle cx="12" cy="14" r="7.5" /></symbol>
+      <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M21.5 12.5h-5.5l-1.8 2.7H9.8L8 12.5H2.5" /><path d="M5.6 5.6 2.5 12.5v5.2a2 2 0 0 0 2 2h15a2 2 0 0 0 2-2v-5.2l-3.1-6.9a2 2 0 0 0-1.8-1.2H7.4a2 2 0 0 0-1.8 1.2Z" /></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="16" rx="3" /><path d="M8 2.5v4M16 2.5v4M3.5 10h17" /></symbol>
+      <symbol id="i-plus-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" /><path d="M8 12h8M12 8v8" /></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24"><path d="M12.22 2.5h-.44a1.9 1.9 0 0 0-1.9 1.9v.17a1.9 1.9 0 0 1-.95 1.64l-.41.24a1.9 1.9 0 0 1-1.9 0l-.14-.08a1.9 1.9 0 0 0-2.6.7l-.21.36a1.9 1.9 0 0 0 .7 2.6l.14.09a1.9 1.9 0 0 1 .95 1.63v.49a1.9 1.9 0 0 1-.95 1.65l-.14.08a1.9 1.9 0 0 0-.7 2.6l.21.36a1.9 1.9 0 0 0 2.6.7l.14-.08a1.9 1.9 0 0 1 1.9 0l.41.24a1.9 1.9 0 0 1 .95 1.64v.17a1.9 1.9 0 0 0 1.9 1.9h.44a1.9 1.9 0 0 0 1.9-1.9v-.17a1.9 1.9 0 0 1 .95-1.64l.41-.24a1.9 1.9 0 0 1 1.9 0l.14.08a1.9 1.9 0 0 0 2.6-.7l.21-.37a1.9 1.9 0 0 0-.7-2.6l-.14-.08a1.9 1.9 0 0 1-.95-1.65v-.48a1.9 1.9 0 0 1 .95-1.65l.14-.08a1.9 1.9 0 0 0 .7-2.6l-.21-.36a1.9 1.9 0 0 0-2.6-.7l-.14.08a1.9 1.9 0 0 1-1.9 0l-.41-.24a1.9 1.9 0 0 1-.95-1.64V4.4a1.9 1.9 0 0 0-1.9-1.9Z" /><circle cx="12" cy="12" r="3" /></symbol>
+      <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8.5h9.5a2.5 2.5 0 1 0-2.4-3.2M3 12.5h15a3 3 0 1 1-2.9 3.8M3 16.5h6" /></symbol>
+      <symbol id="i-step" viewBox="0 0 24 24"><path d="M3.5 19.5h5v-5h5v-5h7" /><path d="m17.5 6.5 3 3-3 3" /></symbol>
+      <symbol id="i-question" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.2 7.7L3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 20.5 11.5Z" /><path d="M9.7 9.4a2.4 2.4 0 0 1 4.6.8c0 1.6-2.3 2.2-2.3 2.2M12 15.4h.01" /></symbol>
+      <symbol id="i-smaller" viewBox="0 0 24 24"><path d="M4.5 14h5.5v5.5M19.5 10H14V4.5M14 10l6.5-6.5M3.5 20.5 10 14" /></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6.5 2.5 8.5 2.5 8.5h-17S6 15.5 6 9Z" /><path d="M10.2 20.5a2 2 0 0 0 3.6 0" /></symbol>
+      <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 10.5v3M7 7v10M11 4v16M15 8.5v7M19 6v12" /></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5" /><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" /></symbol>
+      <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7.5 16.5l9-9M9 7.5h7.5V15" /></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5" /></symbol>
+      <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13.5 6.5 19 12l-5.5 5.5" /></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3" /><path d="M10.5 5.5h3" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8.5h16M4 15.5h16" /></symbol>
+    </svg>
+
     <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand" aria-label="With You">
-          <img
-            src="./assets/images/withyou-logo.svg"
-            alt="WithYou app logo"
-            class="brand-logo"
-          />
-          <p class="brand-sub">
-            A Common Gene Labs project ·
-            <a href="https://elaiken3.github.io/common-gene-labs" target="_blank" rel="noopener noreferrer">Common Gene Labs</a>
-          </p>
-        </div>
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="WithYou home">
+          <picture>
+            <source srcset="./assets/images/withyou-logo-dark.svg" media="(prefers-color-scheme: dark)" />
+            <img src="./assets/images/withyou-logo-light.svg" alt="WithYou" width="104" height="21" />
+          </picture>
+        </a>
 
-
-        <nav class="nav">
-          <a href="#how-it-helps">How it helps</a>
-          <a href="#beta">Beta</a>
-          <a href="#about">About</a>
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <a class="btn btn--primary btn--sm" href="https://forms.gle/ZcgrRrMcri86VXNu7" target="_blank" rel="noopener">
+            Join the beta<span class="visually-hidden"> (opens in a new tab)</span>
+          </a>
+          <details class="menu">
+            <summary class="menu__toggle">
+              <svg class="icon" aria-hidden="true"><use href="#i-menu" /></svg>
+              <span class="visually-hidden">Menu</span>
+            </summary>
+            <div class="menu__panel">
+              <a href="#how-it-works">How it works</a>
+              <a href="#privacy">Privacy</a>
+              <a href="#faq">FAQ</a>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Early TestFlight build</p>
-            <h1>A gentle way to start when your brain won’t.</h1>
+      <!-- HERO -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Now in TestFlight beta</p>
+            <h1 id="hero-title" class="display">A gentle way to start when your brain won’t.</h1>
             <p class="lede">
-              WithYou is an early TestFlight build designed to help ADHD brains get started, stay focused,
-              and complete tasks without pressure or shame.
+              WithYou is a calm iPhone app for ADHD brains. Get thoughts out of your head, see the one thing that
+              matters right now, and protect a little focus. No streaks, no guilt, nothing overdue.
             </p>
-
             <div class="cta-row">
-              <!-- Replace this link with your actual beta signup form URL -->
-              <a class="button primary" href="https://forms.gle/ZcgrRrMcri86VXNu7" target="_blank" rel="noopener">
-                Join the beta
+              <a class="btn btn--primary btn--lg" href="https://forms.gle/ZcgrRrMcri86VXNu7" target="_blank" rel="noopener">
+                Join the beta<span class="visually-hidden"> (opens in a new tab)</span>
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
               </a>
-
-              <a class="button secondary" href="#how-it-helps">
-                See how it helps
+              <a class="btn btn--quiet btn--lg" href="#how-it-works">
+                See how it works
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-down" /></svg>
               </a>
             </div>
-
-            <p class="microcopy">
-              No streaks. No guilt. Just support for the starting line.
-            </p>
-            <p class="microcopy">
-              <a href="https://medium.com/@elaiken3/withyou-a-gentle-app-for-starting-when-your-brain-wont-let-you-ceaf5e079bf1" target="_blank" rel="noopener">
-                Why I built this →
-              </a>
+            <p class="micro">
+              <svg class="icon icon--xs" aria-hidden="true"><use href="#i-lock" /></svg>
+              Free during the beta. Your thoughts stay on your phone.
             </p>
           </div>
 
-          <div class="hero-card" role="region" aria-label="What you’ll find inside">
-            <div class="card">
-              <h2 class="card-title">Inside the app</h2>
+          <figure class="hero__visual">
+            <div class="stage" aria-hidden="true">
+              <div class="rings"><span></span><span></span><span></span></div>
 
-              <ul class="checklist">
-                <li>Capture thoughts fast when you’re overwhelmed</li>
-                <li>Turn “too big” into one doable first step</li>
-                <li>Gentle structure when focus feels slippery</li>
-              </ul>
+              <!-- Back device: Focus session (app in dark appearance) -->
+              <div class="device device--back">
+                <div class="device__body">
+                  <div class="screen screen--focus app-dark">
+                    <div class="status">
+                      <span class="status__time">9:58</span>
+                      <span class="status__icons">
+                        <svg viewBox="0 0 18 12" width="18" height="12"><rect x="0" y="8" width="3" height="4" rx="1" /><rect x="5" y="5.5" width="3" height="6.5" rx="1" /><rect x="10" y="3" width="3" height="9" rx="1" /><rect x="15" y="0" width="3" height="12" rx="1" /></svg>
+                        <svg viewBox="0 0 16 12" width="16" height="12"><path d="M8 11.4 5.9 9.2a3 3 0 0 1 4.2 0Z" /><path class="wifi-arc" d="M3.5 6.6a6.4 6.4 0 0 1 9 0M1 4a10 10 0 0 1 14 0" /></svg>
+                        <svg viewBox="0 0 26 12" width="26" height="12"><rect x=".5" y=".5" width="22" height="11" rx="3.5" fill="none" stroke="currentColor" opacity=".4" /><rect x="2" y="2" width="15" height="8" rx="2" /><rect x="24" y="4" width="1.6" height="4" rx=".8" opacity=".4" /></svg>
+                      </span>
+                    </div>
+                    <div class="island"></div>
+                    <div class="focus">
+                      <p class="focus__kicker">Focus session</p>
+                      <p class="focus__task">Email landlord about the sink</p>
+                      <div class="focus__ring">
+                        <svg viewBox="0 0 200 200">
+                          <circle class="ring-track" cx="100" cy="100" r="88" />
+                          <circle class="ring-fill" cx="100" cy="100" r="88" pathLength="100" stroke-dasharray="75 100" transform="rotate(-90 100 100)" />
+                        </svg>
+                        <div class="focus__time"><span>18:42</span><small>of 25 min</small></div>
+                      </div>
+                      <p class="focus__mantra">Only this matters right now.</p>
+                      <div class="focus__actions">
+                        <span class="app-btn app-btn--line">Pause</span>
+                        <span class="app-btn app-btn--line">Extend</span>
+                      </div>
+                      <p class="focus__note">Stopping still counts.</p>
+                    </div>
+                    <div class="home-indicator"></div>
+                  </div>
+                </div>
+              </div>
 
-              <p class="card-note">
-                Built for adults with diagnosed or self-identified ADHD.
-              </p>
+              <!-- Front device: Today -->
+              <div class="device device--front">
+                <div class="device__body">
+                  <div class="screen screen--today">
+                    <div class="status">
+                      <span class="status__time">9:41</span>
+                      <span class="status__icons">
+                        <svg viewBox="0 0 18 12" width="18" height="12"><rect x="0" y="8" width="3" height="4" rx="1" /><rect x="5" y="5.5" width="3" height="6.5" rx="1" /><rect x="10" y="3" width="3" height="9" rx="1" /><rect x="15" y="0" width="3" height="12" rx="1" /></svg>
+                        <svg viewBox="0 0 16 12" width="16" height="12"><path d="M8 11.4 5.9 9.2a3 3 0 0 1 4.2 0Z" /><path class="wifi-arc" d="M3.5 6.6a6.4 6.4 0 0 1 9 0M1 4a10 10 0 0 1 14 0" /></svg>
+                        <svg viewBox="0 0 26 12" width="26" height="12"><rect x=".5" y=".5" width="22" height="11" rx="3.5" fill="none" stroke="currentColor" opacity=".4" /><rect x="2" y="2" width="16" height="8" rx="2" /><rect x="24" y="4" width="1.6" height="4" rx=".8" opacity=".4" /></svg>
+                      </span>
+                    </div>
+                    <div class="island"></div>
+
+                    <div class="app">
+                      <div class="app-nav">
+                        <span class="app-nav__title">Today</span>
+                        <svg class="app-nav__gear"><use href="#i-gear" /></svg>
+                      </div>
+
+                      <div class="energy">
+                        <span class="energy__label">Energy today</span>
+                        <span class="energy__chips">
+                          <span class="chip">Low</span>
+                          <span class="chip is-on">Okay</span>
+                          <span class="chip">Good</span>
+                        </span>
+                      </div>
+
+                      <p class="app-label">Right now</p>
+                      <div class="app-card app-card--now">
+                        <p class="app-card__title">Email landlord about the sink</p>
+                        <p class="app-card__step">Start: Open Mail <svg class="app-arrow" viewBox="0 0 24 24"><use href="#i-arrow-r" /></svg> find the thread (4 min)</p>
+                        <div class="app-card__actions">
+                          <span class="app-btn app-btn--fill">Start focusing</span>
+                          <span class="app-btn app-btn--line">Not now</span>
+                        </div>
+                      </div>
+
+                      <p class="app-label">If you have energy</p>
+                      <div class="app-card">
+                        <p class="app-card__title app-card__title--sm">Book a dentist appointment</p>
+                        <p class="app-card__step">Start: Find the number or website (5 min)</p>
+                        <div class="app-card__links"><span>Schedule</span><span>Let it go</span></div>
+                      </div>
+
+                      <p class="app-label">Reset</p>
+                      <div class="app-group">
+                        <div class="app-row"><svg class="app-row__icon"><use href="#i-wind" /></svg><span>Refocus <em>(30 seconds)</em></span><svg class="app-row__chev"><use href="#i-chevron" /></svg></div>
+                        <div class="app-row"><svg class="app-row__icon"><use href="#i-step" /></svg><span>I’m stuck</span><svg class="app-row__chev"><use href="#i-chevron" /></svg></div>
+                      </div>
+
+                      <p class="app-foot">Your Inbox is holding 4 thoughts. You don’t need to clear it today.</p>
+                    </div>
+
+                    <div class="tabbar">
+                      <span class="tab is-on"><svg><use href="#i-sun" /></svg>Today</span>
+                      <span class="tab"><svg><use href="#i-timer" /></svg>Focus</span>
+                      <span class="tab"><svg><use href="#i-inbox" /></svg>Inbox</span>
+                      <span class="tab"><svg><use href="#i-calendar" /></svg>Schedule</span>
+                      <span class="tab"><svg><use href="#i-plus-circle" /></svg>Capture</span>
+                    </div>
+                    <div class="home-indicator"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+            <figcaption class="visually-hidden">
+              Two iPhone screens from WithYou. The Today screen shows an energy check-in set to Okay, one task for right
+              now (“Email landlord about the sink”, with the first step “Open Mail, find the thread, 4 minutes”), one
+              optional task if you have energy, and two reset options: Refocus and I’m stuck. A note says your Inbox is
+              holding 4 thoughts and you don’t need to clear it today. Behind it, a focus session timer shows 18:42 left
+              with the words “Only this matters right now.”
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section id="how-it-helps" class="section">
+      <!-- HOW IT WORKS -->
+      <section class="section" id="how-it-works" aria-labelledby="how-title">
         <div class="container">
-          <h2>How it helps</h2>
-          <div class="grid">
-            <div class="tile">
-              <h3>Start smaller than you think</h3>
-              <p>
-                When your brain freezes, “do the whole thing” isn’t a plan.
-                WithYou centers the first tiny move.
-              </p>
-            </div>
+          <header class="section-head">
+            <p class="kicker">How it works</p>
+            <h2 id="how-title" class="h2">Out of your head. Down to one thing. Started.</h2>
+          </header>
 
-            <div class="tile">
-              <h3>Reduce emotional friction</h3>
-              <p>
-                It’s not about motivation. It’s about the feeling of starting.
-                The app is designed to be calm and non-judgmental.
-              </p>
-            </div>
+          <ol class="steps">
+            <li class="step">
+              <div class="step__stage" aria-hidden="true">
+                <div class="vig vig--capture">
+                  <div class="vig-field">
+                    <span>Dentist Thursday at 3</span><i class="vig-caret"></i>
+                  </div>
+                  <div class="vig-preview">
+                    <svg class="icon icon--xs"><use href="#i-calendar" /></svg>
+                    <span>Goes to <b>Schedule</b> · Thu, 3:00 PM</span>
+                  </div>
+                  <div class="vig-preview vig-preview--alt">
+                    <svg class="icon icon--xs"><use href="#i-inbox" /></svg>
+                    <span>No time? It waits in <b>Inbox</b></span>
+                  </div>
+                </div>
+              </div>
+              <div class="step__body">
+                <p class="step__num" aria-hidden="true">1</p>
+                <h3 class="h3"><span class="visually-hidden">Step 1: </span>Capture</h3>
+                <p>Type it or tell Siri. If there’s a time in it, WithYou schedules it. If not, it waits in your Inbox. A thought is not a promise.</p>
+              </div>
+            </li>
 
-            <div class="tile">
-              <h3>Support without pressure</h3>
-              <p>
-                No streaks, no punishment for stopping, no “you failed” vibes.
-                Just a steady hand when you’re stuck.
-              </p>
-            </div>
-          </div>
+            <li class="step">
+              <div class="step__stage" aria-hidden="true">
+                <div class="vig vig--today">
+                  <p class="vig-label">Right now</p>
+                  <div class="vig-card">
+                    <p class="vig-card__title">Email landlord about the sink</p>
+                    <p class="vig-card__sub">Start: Open Mail (4 min)</p>
+                    <span class="vig-btn">Start focusing</span>
+                  </div>
+                  <p class="vig-label vig-label--muted">If you have energy</p>
+                  <div class="vig-ghost"><span>Book a dentist appointment</span><svg><use href="#i-chevron" /></svg></div>
+                </div>
+              </div>
+              <div class="step__body">
+                <p class="step__num" aria-hidden="true">2</p>
+                <h3 class="h3"><span class="visually-hidden">Step 2: </span>Today</h3>
+                <p>One thing for right now, one optional extra if you have energy, and a way to reset. Nothing piles up. Nothing turns red.</p>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step__stage" aria-hidden="true">
+                <div class="vig vig--focus">
+                  <div class="vig-ring">
+                    <svg viewBox="0 0 120 120">
+                      <circle class="ring-track" cx="60" cy="60" r="52" />
+                      <circle class="ring-fill" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="100 100" transform="rotate(-90 60 60)" />
+                    </svg>
+                    <span>25:00</span>
+                  </div>
+                  <div class="vig-chips">
+                    <span class="is-on">25</span><span>45</span><span>60</span><span>Custom</span>
+                  </div>
+                </div>
+              </div>
+              <div class="step__body">
+                <p class="step__num" aria-hidden="true">3</p>
+                <h3 class="h3"><span class="visually-hidden">Step 3: </span>Focus</h3>
+                <p>Pick one thing, park the noise in a brain dump, and start a short timer. Stopping still counts.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <section id="about" class="section subtle">
+      <!-- MOMENTS -->
+      <section class="section section--rule" id="moments" aria-labelledby="moments-title">
         <div class="container">
-          <h2>What it is (and what it isn’t)</h2>
-          <div class="two-col">
-            <div class="panel">
-              <h3>It is</h3>
-              <ul class="bullets">
-                <li>A gentle tool for task initiation</li>
-                <li>A calm place to capture and sort thoughts</li>
-                <li>Support for overwhelm and getting unstuck</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>It isn’t</h3>
-              <ul class="bullets">
-                <li>A “grind harder” productivity system</li>
-                <li>A streak-based habit tracker</li>
-                <li>A replacement for therapy or medical care</li>
-              </ul>
-            </div>
-          </div>
-
-          <p class="disclaimer" role="note">
-            WithYou is not a medical device and does not provide medical advice.
-            If you’re in crisis or feel unsafe, contact local emergency services or a trusted support line.
-          </p>
-        </div>
-      </section>
-
-      <section id="beta" class="section">
-        <div class="container">
-          <div class="beta-box">
+          <header class="section-head section-head--split">
             <div>
-              <h2>Join the beta</h2>
-              <p>
-                I’m inviting a small group of testers to use With You and share honest feedback—
-                especially about what feels calming, confusing, or pressure-inducing.
-              </p>
-              <p class="microcopy">
-                You’ll get access via TestFlight. Feedback helps shape what v1 becomes.
-              </p>
+              <p class="kicker">Moments</p>
+              <h2 id="moments-title" class="h2">Help for the hard little moments.</h2>
             </div>
+            <p class="section-intro">Small, quiet tools for when starting, focusing or remembering feels heavier than it should.</p>
+          </header>
 
-            <div class="beta-cta">
-              <!-- Replace this link with your actual beta signup form URL -->
-              <a class="button primary" href="https://forms.gle/ZcgrRrMcri86VXNu7" target="_blank" rel="noopener">
-                Fill out the beta form
-              </a>
+          <ul class="moments">
+            <li class="moment">
+              <span class="moment__icon" aria-hidden="true"><svg class="icon"><use href="#i-wind" /></svg></span>
+              <h3 class="h3">Refocus</h3>
+              <p>A 30-second breathing reset with your own mantra, from anywhere in the app.</p>
+            </li>
+            <li class="moment">
+              <span class="moment__icon" aria-hidden="true"><svg class="icon"><use href="#i-step" /></svg></span>
+              <h3 class="h3">I’m stuck</h3>
+              <p>One tiny next step. Too big? Make it smaller. Two minutes is enough.</p>
+            </li>
+            <li class="moment">
+              <span class="moment__icon" aria-hidden="true"><svg class="icon"><use href="#i-question" /></svg></span>
+              <h3 class="h3">Still relevant?</h3>
+              <p>Missed something? WithYou asks once, kindly, then lets it go.</p>
+            </li>
+            <li class="moment">
+              <span class="moment__icon" aria-hidden="true"><svg class="icon"><use href="#i-smaller" /></svg></span>
+              <h3 class="h3">Make it smaller</h3>
+              <p>On iPhones with Apple Intelligence, WithYou suggests an even smaller first step, entirely on device.</p>
+            </li>
+            <li class="moment">
+              <span class="moment__icon" aria-hidden="true"><svg class="icon"><use href="#i-bell" /></svg></span>
+              <h3 class="h3">Reminders that help you start</h3>
+              <p>Each reminder says how to begin, not just what you forgot.</p>
+            </li>
+            <li class="moment">
+              <span class="moment__icon" aria-hidden="true"><svg class="icon"><use href="#i-wave" /></svg></span>
+              <h3 class="h3">Siri &amp; Shortcuts</h3>
+              <p>Capture a thought, start a focus session, or ask for help without opening the app.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WON'T DO + PRINCIPLE -->
+      <section class="band" aria-labelledby="wont-title">
+        <div class="container">
+          <div class="band__grid">
+            <h2 id="wont-title" class="kicker kicker--band">What WithYou won’t do</h2>
+            <div>
+              <ul class="nopes">
+                <li>No streaks.</li>
+                <li>No scores.</li>
+                <li>Nothing overdue.</li>
+                <li>No red badges.</li>
+                <li>No nagging.</li>
+              </ul>
+              <p class="nopes__coda">Missed things are neutral.</p>
             </div>
+          </div>
+
+          <figure class="principle">
+            <blockquote>
+              <p>“Every feature has to pass one test: would this feel safe to open on a bad day?”</p>
+            </blockquote>
+            <figcaption>The WithYou design principle</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- PRIVACY -->
+      <section class="section" id="privacy" aria-labelledby="privacy-title">
+        <div class="container privacy">
+          <div class="privacy__copy">
+            <p class="kicker">Privacy</p>
+            <h2 id="privacy-title" class="h2">Your thoughts stay on your phone.</h2>
+            <p class="body-l">
+              Everything you capture lives on your iPhone. No account, no ads, no analytics. If you turn on
+              notifications, the server keeps only what it needs to deliver them, and one switch deletes it.
+            </p>
+            <a class="link-arrow" href="/privacy/">Read the privacy policy<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-r" /></svg></a>
+          </div>
+
+          <div class="ledger">
+            <div class="ledger__head">
+              <span class="ledger__icon" aria-hidden="true"><svg class="icon"><use href="#i-phone" /></svg></span>
+              <p class="ledger__title">Where your data goes</p>
+            </div>
+            <dl class="ledger__list">
+              <div><dt>Thoughts, tasks and focus sessions</dt><dd>Stay on your iPhone</dd></div>
+              <div><dt>Account</dt><dd>None</dd></div>
+              <div><dt>Ads</dt><dd>None</dd></div>
+              <div><dt>Analytics</dt><dd>None</dd></div>
+              <div><dt>Notifications <span class="ledger__opt">optional</span></dt><dd>Only what’s needed to deliver them. One switch deletes it.</dd></div>
+            </dl>
           </div>
         </div>
       </section>
 
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <p class="footer-title">WithYou</p>
-          <p class="footer-text">
-            Made with care for ADHD brains. Still early. Still learning.
-          </p>
-          <p class="footer-text subtle">
-            Built by <a href="https://elaiken3.github.io/" target="_blank" rel="noopener noreferrer">Common Gene Labs</a>.
-          </p>
-          <p class="footer-links">
-            <a href="https://medium.com/@elaiken3/withyou-a-gentle-app-for-starting-when-your-brain-wont-let-you-ceaf5e079bf1" target="_blank" rel="noopener">
-              Read the story →
-            </a>
-            <span class="divider">·</span>
-            <a href="#main">Back to top</a>
-          </p>
+      <!-- FAQ -->
+      <section class="section section--rule" id="faq" aria-labelledby="faq-title">
+        <div class="container faq">
+          <header class="faq__head">
+            <p class="kicker">FAQ</p>
+            <h2 id="faq-title" class="h2">Questions, answered plainly.</h2>
+          </header>
+          <div class="faq__list">
+            <details class="qa">
+              <summary><span>Is it free?</span><svg class="qa__icon" aria-hidden="true"><use href="#i-plus" /></svg></summary>
+              <p>Yes, during the beta. The core relief features (Capture, Inbox, Focus sessions, Refocus and I’m stuck) will always be free. No ads, ever.</p>
+            </details>
+            <details class="qa">
+              <summary><span>Is my data private?</span><svg class="qa__icon" aria-hidden="true"><use href="#i-plus" /></svg></summary>
+              <p>Yes. Your thoughts, tasks and focus sessions stay on your iPhone. There’s no account and no analytics.</p>
+            </details>
+            <details class="qa">
+              <summary><span>What do I need?</span><svg class="qa__icon" aria-hidden="true"><use href="#i-plus" /></svg></summary>
+              <p>An iPhone with iOS 17.6 or later. You’ll get access through TestFlight.</p>
+            </details>
+            <details class="qa">
+              <summary><span>What if I fall behind?</span><svg class="qa__icon" aria-hidden="true"><use href="#i-plus" /></svg></summary>
+              <p>Nothing in WithYou is ever overdue. Missed reminders are asked about once, then let go. Come back whenever you’re ready.</p>
+            </details>
+            <details class="qa">
+              <summary><span>Is this medical advice?</span><svg class="qa__icon" aria-hidden="true"><use href="#i-plus" /></svg></summary>
+              <p>No. WithYou is a support tool, not a medical device or treatment. If you’re in crisis, contact local emergency services or a trusted support line.</p>
+            </details>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- BETA -->
+      <section class="section section--tight" id="beta" aria-labelledby="beta-title">
+        <div class="container">
+          <div class="beta">
+            <div class="beta__copy">
+              <h2 id="beta-title" class="h2">Help shape version one.</h2>
+              <p class="body-l">We’re inviting a small group of testers. Tell us what feels calming, confusing, or pressure-inducing.</p>
+              <div class="cta-row">
+                <a class="btn btn--primary btn--lg" href="https://forms.gle/ZcgrRrMcri86VXNu7" target="_blank" rel="noopener">
+                  Join the beta<span class="visually-hidden"> (opens in a new tab)</span>
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
+                </a>
+                <a class="link-arrow" href="https://medium.com/@elaiken3/withyou-a-gentle-app-for-starting-when-your-brain-wont-let-you-ceaf5e079bf1" target="_blank" rel="noopener">
+                  Why I built this<span class="visually-hidden"> (opens in a new tab)</span><svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-ur" /></svg>
+                </a>
+              </div>
+            </div>
+            <div class="beta__mark" aria-hidden="true">
+              <svg viewBox="-4 4 233 174">
+                <defs>
+                  <linearGradient id="mark-gold" x1="0" y1="9" x2="0" y2="173" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" class="mg-1" />
+                    <stop offset=".55" class="mg-2" />
+                    <stop offset="1" class="mg-3" />
+                  </linearGradient>
+                </defs>
+                <path d="M46.8217 172.985L-3.31551e-06 9.34837H37.793L64.8793 123.047H66.2376L96.1204 9.34837H128.48L158.283 123.287H159.721L186.808 9.34837H224.601L177.779 172.985H144.061L112.9 65.9979H111.621L80.5398 172.985H46.8217Z" fill="url(#mark-gold)" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <picture>
+              <source srcset="./assets/images/withyou-logo-dark.svg" media="(prefers-color-scheme: dark)" />
+              <img src="./assets/images/withyou-logo-light.svg" alt="WithYou" width="119" height="24" />
+            </picture>
+            <p>Made with care for ADHD brains.</p>
+          </div>
+          <nav class="footer__nav" aria-label="Footer">
+            <ul>
+              <li><a href="/how-to/">How to use</a></li>
+              <li><a href="/privacy/">Privacy</a></li>
+              <li><a href="/support/">Support</a></li>
+              <li><a href="https://medium.com/@elaiken3/withyou-a-gentle-app-for-starting-when-your-brain-wont-let-you-ceaf5e079bf1" target="_blank" rel="noopener">The story<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+              <li><a href="https://elaiken3.github.io/common-gene-labs" target="_blank" rel="noopener">Common Gene Labs<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p>WithYou is a Common Gene Labs project.</p>
+          <p>For iPhone · iOS 17.6 or later</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

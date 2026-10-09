@@ -1,0 +1,22 @@
+title: WithYou
+description: A calm, shame-free iPhone app for ADHD brains. No streaks, no guilt, nothing overdue.
+url: "https://wearewithyou.app"
+baseurl: ""
+lang: en
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
