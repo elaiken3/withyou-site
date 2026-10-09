@@ -91,7 +91,7 @@ This prevents the ADHD pattern of:
 This section is for moments when your nervous system needs help — not more tasks.
 
 You’ll see:
-- **Refocus (30 seconds)** – a short reset to pause and re-center
+- **Refocus (1 minute)** – a short reset to pause and re-center
 - **I’m stuck** – a signal that you’re blocked and need gentler guidance. It offers one tiny step, and **Make it smaller** shrinks it further. On iPhones with Apple Intelligence, the smaller step is suggested on your device.
 - **Let today rest** – in the evening, if anything is left for today, one tap moves it to tomorrow morning.
 
@@ -312,7 +312,7 @@ Refocus is for moments like:
 - You’ve been avoiding something
 - You’re looping mentally
 
-It’s a 30-second reset — not a lecture.
+It’s a one-minute reset — not a lecture.
 
 <p class="back-to-top">
   <a href="#top">↑ Back to top</a>
@@ -358,7 +358,7 @@ It’s a 30-second reset — not a lecture.
 
 ### Scenario 5: “My brain is loud but I don’t want to work yet”
 1. Open **Today**
-2. Tap **Refocus (30 seconds)** or **I’m stuck**
+2. Tap **Refocus (1 minute)** or **I’m stuck**
 3. Breathe
 4. If clarity comes, proceed
 5. If not, stop — the app still did its job
